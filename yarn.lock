@@ -147,6 +147,15 @@
     mousetrap "^1.6.5"
     preact "^10.4.8"
 
+"@logicflow/extension@^1.1.11":
+  version "1.1.11"
+  resolved "https://registry.npmmirror.com/@logicflow/extension/-/extension-1.1.11.tgz#1bd7a367dccf2426510dcf15747814e28d2b1e22"
+  integrity sha512-1N/CS4fEUoai+TuMByuCElk7LPaqrpzjAWgdzY7k67DlSnZVHPKLQfW4jWqjoh3CFpmAajZebVZX9Q7nGfmOaw==
+  dependencies:
+    "@logicflow/core" "^1.1.11"
+    ids "^1.0.0"
+    preact "^10.4.8"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1405,6 +1414,11 @@ husky@^7.0.4:
   version "7.0.4"
   resolved "https://registry.npmmirror.com/husky/-/husky-7.0.4.tgz"
   integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
+
+ids@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/ids/-/ids-1.0.0.tgz#df67f2d37b81d7c2effc87e03d17ebff95a58c05"
+  integrity sha512-Zvtq1xUto4LttpstyOlFum8lKx+i1OmRfg+6A9drFS9iSZsDPMHG4Sof/qwNR4kCU7jBeWFPrY2ocHxiz7cCRw==
 
 ignore@^5.1.8, ignore@^5.2.0:
   version "5.2.0"
