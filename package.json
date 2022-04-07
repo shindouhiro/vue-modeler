@@ -19,6 +19,7 @@
     "@unocss/preset-attributify": "^0.30.11",
     "@unocss/preset-icons": "^0.30.11",
     "@vitejs/plugin-vue": "^2.3.0",
+    "ant-design-vue": "^3.1.1",
     "eslint": "^8.12.0",
     "eslint-plugin-vue": "8.4.0",
     "husky": "^7.0.4",

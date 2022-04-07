@@ -1,7 +1,38 @@
-<template>Home</template>
-<script lang="ts" steup>
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'Home'
-})
+<template>
+  <a-space style="width: 100%">
+    <a-button type="primary" loading>Loading</a-button>
+    <a-button type="primary" size="small" loading>Loading</a-button>
+  </a-space>
+  <a-space style="width: 100%">
+    <a-button type="primary" :loading="loading" @mouseenter="loading = true">
+      mouseenter me!
+    </a-button>
+    <a-button type="primary" :loading="iconLoading" @click="enterIconLoading">
+      <template #icon><PoweroffOutlined /></template>
+      延迟1s
+    </a-button>
+  </a-space>
+  <a-space style="width: 100%">
+    <a-button type="primary" loading />
+    <a-button type="primary" shape="circle" loading />
+    <a-button danger shape="round" loading />
+  </a-space>
+</template>
+<script lang="ts" setup>
+import { ref } from 'vue'
+import { PoweroffOutlined } from '@ant-design/icons-vue'
+
+interface DelayLoading {
+  delay: number
+}
+
+const iconLoading = ref<boolean | DelayLoading>(false)
+const enterIconLoading = () => {
+  iconLoading.value = { delay: 1000 }
+
+  setTimeout(() => {
+    iconLoading.value = false
+  }, 6000)
+}
+const loading = ref(false)
 </script>
