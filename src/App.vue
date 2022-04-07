@@ -5,8 +5,10 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div flex="~ col" justify-center items-center>
+    <button mx-10 my-10 px-10 py-10>1</button>
+    <div class="i-carbon-logo-github" />
+  </div>
 </template>
 
 <style>
