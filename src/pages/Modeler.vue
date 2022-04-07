@@ -24,14 +24,14 @@ const data = {
     {
       id: 50,
       type: 'rect',
-      x: 100,
+      x: 300,
       y: 150,
       text: '你好'
     },
     {
       id: 21,
       type: 'circle',
-      x: 300,
+      x: 500,
       y: 150
     }
   ],
