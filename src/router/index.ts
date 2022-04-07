@@ -10,6 +10,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/home',
     name: 'home',
     component: defineAsyncComponent(() => import('~/pages/Home.vue'))
+  },
+  {
+    path: '/modeler',
+    name: 'modeler',
+    component: defineAsyncComponent(() => import('~/pages/Modeler.vue'))
   }
 ]
 
