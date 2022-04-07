@@ -1,10 +1,15 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { defineAsyncComponent } from 'vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: '/',
+    redirect: '/home'
+  },
+  {
     path: '/home',
     name: 'home',
-    component: () => import('~/pages/Home.vue')
+    component: defineAsyncComponent(() => import('~/pages/Home.vue'))
   }
 ]
 
