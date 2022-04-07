@@ -9,6 +9,7 @@ module.exports = {
     'plugin:vue/essential',
     'plugin:@typescript-eslint/recommended'
   ],
+
   parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -23,6 +24,7 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     'no-undef': 'off',
-    'vue/no-multiple-template-root': 'off'
+    'vue/no-multiple-template-root': 'off',
+    'vue/multi-word-component-names': 0 //关闭驼峰命名规则
   }
 }
