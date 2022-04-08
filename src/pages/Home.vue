@@ -12,6 +12,7 @@
       延迟1s
     </a-button>
   </a-space>
+  <a-divider />
   <a-space style="width: 100%">
     <a-button type="primary" loading />
     <a-button type="primary" shape="circle" loading />

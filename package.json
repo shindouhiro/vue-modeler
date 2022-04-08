@@ -9,6 +9,7 @@
     "lint": "eslint --ext js,ts,jsx,vue src/"
   },
   "dependencies": {
+    "unplugin-vue-components": "^0.18.5",
     "vue": "^3.2.25",
     "vue-eslint-parser": "^8.3.0"
   },
