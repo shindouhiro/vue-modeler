@@ -2,6 +2,8 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Unocss from 'Unocss/vite'
+import Components from 'unplugin-vue-components/vite'
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,8 +14,12 @@ export default defineConfig({
   },
   plugins: [
     vue({
-      reactivityTransform: true
+      reactivityTransform: true //https://juejin.cn/post/7052522319066955790
     }),
-    Unocss()
+    Unocss(),
+    Components({
+      dts: true, //支持自定义文件的路径
+      resolvers: [AntDesignVueResolver()]
+    })
   ]
 })
