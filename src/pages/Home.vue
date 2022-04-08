@@ -17,10 +17,11 @@
     <a-button type="primary" loading />
     <a-button type="primary" shape="circle" loading />
     <a-button danger shape="round" loading />
+    <a-button type="primary" @click="info">Display normal message</a-button>
   </a-space>
 </template>
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { message } from 'ant-design-vue'
 import { PoweroffOutlined } from '@ant-design/icons-vue'
 
 interface DelayLoading {
@@ -34,6 +35,10 @@ const enterIconLoading = () => {
   setTimeout(() => {
     iconLoading.value = false
   }, 6000)
+}
+
+const info = () => {
+  message.info('This is a normal message')
 }
 const loading = ref(false)
 </script>
