@@ -2,7 +2,6 @@
   <div ref="lfRef" h-screen></div>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref, nextTick, unref } from 'vue'
 import {
   Snapshot,
   BpmnElement,
